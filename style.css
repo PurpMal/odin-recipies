@@ -1,0 +1,71 @@
+@keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  body {
+    background-color: white;
+  }
+  
+
+  h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: gold;
+  }
+  
+  h1#Header.animate-heading {
+    animation: slideIn 1s ease forwards;
+  }
+  
+  ul {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+    color: black;
+  }
+  
+  ul li {
+    padding: 5px 0;
+    color: #333;
+    font-size: 16px;
+    /* Add more styles as needed */
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a.return-home {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  a.return-home:hover {
+    background-color: #555;
+  }
+  
