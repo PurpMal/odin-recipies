@@ -1,24 +1,33 @@
 @keyframes slideIn {
-    0% {
-      opacity: 0;
-      transform: translateY(-50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
   }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
   
   * {
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  body {
-    background-color: white;
+  * { 
+    text-align: center;
+  }
+
+  html {
+    height: 120%;
   }
   
-
-  h1 {
+  body {
+    margin: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, black, gray);
+  }
+  
+  h1, h2, h3, h4{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
@@ -29,24 +38,24 @@
     animation: slideIn 1s ease forwards;
   }
   
-  ul {
+  ul, ol {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     text-align: left;
     list-style-type: none;
     padding: 0;
-    color: black;
+    color: gold;
   }
   
   ul li {
     padding: 5px 0;
-    color: #333;
+    color: gold;
     font-size: 16px;
     /* Add more styles as needed */
   }
   
   a {
-    color: black;
+    color: gold;
     text-decoration: none;
   }
   
@@ -69,3 +78,38 @@
     background-color: #555;
   }
   
+  p {
+    color: gold;
+  }
+
+  /* Change background color on button hover */
+.btn {
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff0000;
+}
+
+/* Scale or zoom in on box hover */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #f1f1f1;
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.2);
+}
+
+/* Fade out on link hover */
+.link {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.link:hover {
+  opacity: 0.5;
+}
